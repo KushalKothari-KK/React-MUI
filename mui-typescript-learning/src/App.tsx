@@ -4,6 +4,7 @@ import MuiBoxLayout from "./components/Layout/MuiBoxLayout";
 import MuiCard from "./components/Layout/MuiCard";
 import MuiGrid from "./components/Layout/MuiGrid";
 import MuiStack from "./components/Layout/MuiStack";
+import MuiAccordion from "./components/Layout/MuiAccordion";
 import MuiAutocomplete from "./components/MuiAutocomplete";
 import MuiButton from "./components/MuiButton";
 import MuiCheckbox from "./components/MuiCheckbox";
@@ -14,6 +15,10 @@ import MuiSelect from "./components/MuiSelect";
 import MuiSwitch from "./components/MuiSwitch";
 import MuiTextField from "./components/MuiTextField";
 import MuiTypography from "./components/MuiTypography";
+import MuiImageList from "./components/Layout/MuiImageList";
+import MuiNavbar from "./components/Navigation/MuiNavbar";
+import MuiMenu from "./components/Navigation/MuiMenu";
+import MuiLink from "./components/Navigation/MuiLink";
 
 function App() {
   return (
@@ -158,7 +163,7 @@ function App() {
         MuiCard
       </Box>
       <MuiCard /> */}
-      <Box
+      {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -167,6 +172,47 @@ function App() {
       >
         Accordion
       </Box>
+      <MuiAccordion /> */}
+      {/* <Box
+        sx={{
+          padding: "15px 0px",
+          margin: "15px 0px",
+          borderTop: "1px solid #ccc",
+        }}
+      >
+        ImageList
+      </Box>
+      <MuiImageList /> */}
+      {/* <Box
+        sx={{
+          padding: "15px 0px",
+          margin: "15px 0px",
+          borderTop: "1px solid #ccc",
+        }}
+      >
+        Navbar
+      </Box> */}
+      {/* <MuiNavbar /> */}
+      {/* <Box
+        sx={{
+          padding: "15px 0px",
+          margin: "15px 0px",
+          borderTop: "1px solid #ccc",
+        }}
+      >
+        Menu
+      </Box>
+      <MuiMenu /> */}
+      <Box
+        sx={{
+          padding: "15px 0px",
+          margin: "15px 0px",
+          borderTop: "1px solid #ccc",
+        }}
+      >
+        Link
+      </Box>
+      <MuiLink />
     </div>
   );
 }
