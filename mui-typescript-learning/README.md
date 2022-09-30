@@ -1,3 +1,9 @@
+# For Date install below package
+
+npm install date-fns @date-io/date-fns
+npm install @mui/x-date-pickers
+npm i @mui/x-date-pickers-pro
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

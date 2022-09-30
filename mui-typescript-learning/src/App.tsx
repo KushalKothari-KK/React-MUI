@@ -1,4 +1,6 @@
-import { Box, Chip } from "@mui/material";
+import { Box } from "@mui/material";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers";
 import "./App.css";
 import MuiBoxLayout from "./components/Layout/MuiBoxLayout";
 import MuiCard from "./components/Layout/MuiCard";
@@ -34,11 +36,18 @@ import MuiSnackbar from "./components/Feedback/MuiSnackbar";
 import MuiDialog from "./components/Feedback/MuiDialog";
 import MuiProgress from "./components/Feedback/MuiProgress";
 import MuiSkeleton from "./components/Feedback/MuiSkeleton";
+import MuiLoadingButton from "./components/Lab/MuiLoadingButton";
+import MuiPicker from "./components/Lab/MuiPicker";
+import MuiDateRangePicker from "./components/Lab/MuiDateRangePicker";
+import MuiTabs from "./components/Lab/MuiTabs";
+import MuiTimeline from "./components/Lab/MuiTimeline";
+import MuiMasonry from "./components/Lab/MuiMasonry";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Box
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <div className="App">
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -158,7 +167,7 @@ function App() {
         MuiGrid
       </Box>
       <MuiGrid /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -168,7 +177,7 @@ function App() {
         Paper
       </Box>
       <MuiPaper /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -178,7 +187,7 @@ function App() {
         MuiCard
       </Box>
       <MuiCard /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -188,7 +197,7 @@ function App() {
         Accordion
       </Box>
       <MuiAccordion /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -198,7 +207,7 @@ function App() {
         ImageList
       </Box>
       <MuiImageList /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -207,8 +216,8 @@ function App() {
       >
         Navbar
       </Box> */}
-      {/* <MuiNavbar /> */}
-      {/* <Box
+        {/* <MuiNavbar /> */}
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -218,7 +227,7 @@ function App() {
         Menu
       </Box>
       <MuiMenu /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -228,7 +237,7 @@ function App() {
         Link
       </Box>
       <MuiLink /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -238,7 +247,7 @@ function App() {
         Breadcrumbs
       </Box>
       <MuiBreadcrumbs /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -248,7 +257,7 @@ function App() {
         Drawer
       </Box>
       <MuiDrawer /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -258,7 +267,7 @@ function App() {
         Speed Dial
       </Box>
       <MuiSpeedDial /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -268,7 +277,7 @@ function App() {
         Bottom Navigation
       </Box>
       <MuiNavigation /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -278,7 +287,7 @@ function App() {
         Avatar
       </Box>
       <MuiAvatar /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -288,7 +297,7 @@ function App() {
         Badge
       </Box>
       <MuiBadge /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -298,7 +307,7 @@ function App() {
         List
       </Box>
       <MuiList /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -308,7 +317,7 @@ function App() {
         Chip
       </Box>
       <MuiChip /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -318,7 +327,7 @@ function App() {
         Tooltip
       </Box>
       <MuiTooltip /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -328,7 +337,7 @@ function App() {
         Table
       </Box>
       <MuiTable /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -338,7 +347,7 @@ function App() {
         Alert
       </Box>
       <MuiAlert /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -348,7 +357,7 @@ function App() {
         Snackbar
       </Box>
       <MuiSnackbar /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -358,7 +367,7 @@ function App() {
         Dialog
       </Box>
       <MuiDialog /> */}
-      {/* <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -368,7 +377,7 @@ function App() {
         Progress
       </Box>
       <MuiProgress /> */}
-      <Box
+        {/* <Box
         sx={{
           padding: "15px 0px",
           margin: "15px 0px",
@@ -377,8 +386,69 @@ function App() {
       >
         Skeleton
       </Box>
-      <MuiSkeleton />
-    </div>
+      <MuiSkeleton /> */}
+        {/* <Box
+        sx={{
+          padding: "15px 0px",
+          margin: "15px 0px",
+          borderTop: "1px solid #ccc",
+        }}
+      >
+        Loading Button
+      </Box>
+      <MuiLoadingButton /> */}
+        {/* <Box
+          sx={{
+            padding: "15px 0px",
+            margin: "15px 0px",
+            borderTop: "1px solid #ccc",
+          }}
+        >
+          Date Picker
+        </Box>
+        <MuiPicker /> */}
+        {/* <Box
+          sx={{
+            padding: "15px 0px",
+            margin: "15px 0px",
+            borderTop: "1px solid #ccc",
+          }}
+        >
+          Date Range Picker
+        </Box>
+        <MuiDateRangePicker /> */}
+        {/* <Box
+          sx={{
+            padding: "15px 0px",
+            margin: "15px 0px",
+            borderTop: "1px solid #ccc",
+          }}
+        >
+          Tabs
+        </Box>
+        <MuiTabs /> */}
+        {/* <Box
+          sx={{
+            padding: "15px 0px",
+            margin: "15px 0px",
+            borderTop: "1px solid #ccc",
+          }}
+        >
+          Timeline
+        </Box>
+        <MuiTimeline /> */}
+        <Box
+          sx={{
+            padding: "15px 0px",
+            margin: "15px 0px",
+            borderTop: "1px solid #ccc",
+          }}
+        >
+          Masonry
+        </Box>
+        <MuiMasonry />
+      </div>
+    </LocalizationProvider>
   );
 }
 
